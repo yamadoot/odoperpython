@@ -4,6 +4,7 @@ s_dict={}
 for z in s_list:
   print(z)
 for x in s_list:
-  s_dict[x[:s.index("=")]] = x[s.index("=")+1:]
+  t=x.index("=")
+  s_dict[x[:t]] = x[t+1:]
 
 print(s_dict)
