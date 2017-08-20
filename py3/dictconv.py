@@ -1,16 +1,19 @@
+def conv(sd):
+  sl=sd.items()
+  for x in sl:
+    print(x)
+  
+  s2=[]
+  for x in sl:
+    s2.append(x[0]+'='+x[1])
+  
+  s=';'.join(s2)
+  return s
+
+
 sd={'laal': 'red', 'peela': 'yellow', 'neela': 'blue', 'kaala': 'black'}
 
-sl=sd.items()
-for x in sl:
-  print(x)
-
-s2=[]
-for x in sl:
-  s2.append(x[0]+'='+x[1])
-
-s=';'.join(s2)
-print(s)
-
+print(conv(sd))
 
 #sd={'laal': 'red', 'peela': 'yellow', 'neela': 'blue', 'kaala': 'black'}
 #sl=[]
