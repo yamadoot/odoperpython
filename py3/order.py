@@ -1,8 +1,10 @@
 class order():
   def __init__(self):
     self.ord={}
+    self.price=0
   def __setitem__(self,s,quantity):
     self.ord[s]=quantity
+    self.price+=(quantity*veg.mymenu[s])
   def show(self):
     print(self.ord)
 
@@ -29,3 +31,5 @@ while True:
 
 print("your order:")
 x.show()
+print("total amount:")
+print(x.price)
